@@ -1,0 +1,13 @@
+[
+  {
+    id: '7mc',
+    url: 'https://cdn2.thecatapi.com/images/7mc.gif',
+    width: 500,
+    height: 281,
+    created_at: '2026-04-12T08:52:59.480Z',
+    breeds: [],
+    categories: [],
+    colours: [],
+    tags: []
+  }
+]
