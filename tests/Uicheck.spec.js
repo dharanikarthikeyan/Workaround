@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-//purpose :vaidate mouse actions
+//purpose :vaidate mouse actions.
 test("verify double click option", async ({ page }) => {
 
     await page.goto("https://testautomationpractice.blogspot.com/");

@@ -1,6 +1,6 @@
 // @ts-check
 import { test, expect } from '@playwright/test';
-//purpose :validate response attributesg
+//purpose :validate response attributesg.
 test.only('Retrive api key from catapi endpoints', async ({ request }) => {
 
   const response = await request.get('https://api.thecatapi.com/v1/images/search',
