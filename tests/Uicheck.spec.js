@@ -1,5 +1,5 @@
-import{test,expect} from '@playwright/test';
-test("verify double click option",async({page})=>{
+import { test, expect } from '@playwright/test';
+test("verify double click option", async ({ page }) => {
 
     await page.goto("https://testautomationpractice.blogspot.com/");
     await page.waitForLoadState('load');
@@ -7,9 +7,9 @@ test("verify double click option",async({page})=>{
 
 });
 
-test("drag and drop",async({page})=>{
+test("drag and drop", async ({ page }) => {
 
-    await page.goto("https://testautomationpractice.blogspot.com/",{waituntil:'domcontentloaded'});
+    await page.goto("https://testautomationpractice.blogspot.com/", { waituntil: 'domcontentloaded' });
     await page.waitForLoadState('load');
     const sourceelement = page.locator("//p[text()='Drag me to my target']");
     const targetelement = page.locator("//p[text()='Drop here']");
@@ -18,21 +18,21 @@ test("drag and drop",async({page})=>{
 
 });
 
-test.only("mouse hower input options",async({page})=>{
+test.only("mouse hower input options", async ({ page }) => {
 
-    
-await page.goto("https://testautomationpractice.blogspot.com/");
-await page.waitForLoadState('load');
-   
-  const hoverButton = page.locator('//button[text()="Point Me"]');
-  await hoverButton.hover();
 
-  // 3. Wait for the dropdown menu item to become visible
-  const mobilesLink = page.locator('//div/a[text()="Mobiles"]');
-  await mobilesLink.waitFor({ state: 'visible' });
+    await page.goto("https://testautomationpractice.blogspot.com/");
+    await page.waitForLoadState('load');
 
-  // 4. Click the desired option from the dropdown menu
-  await mobilesLink.click();
+    const hoverButton = page.locator('//button[text()="Point Me"]');
+    await hoverButton.hover();
+
+    // 3. Wait for the dropdown menu item to become visible
+    const mobilesLink = page.locator('//div/a[text()="Mobiles"]');
+    await mobilesLink.waitFor({ state: 'visible' });
+
+    // 4. Click the desired option from the dropdown menu
+    await mobilesLink.click();
 
 
 });
