@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-
+//purpose : retrive access token from response
 test('Beare token authendication', async ({ request }) => {
 
     const loginresponse = await request.post(
