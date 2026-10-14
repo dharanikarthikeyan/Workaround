@@ -10,7 +10,6 @@ test.only('Retrive api key from catapi endpoints', async ({ request }) => {
       }
     }
   );
-
   expect(response.status()).toBe(200);
   const responsebody = await response.json();
   console.log(responsebody);

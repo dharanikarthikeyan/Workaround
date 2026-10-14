@@ -12,12 +12,11 @@ test('Beare token authendication', async ({ request }) => {
     }
 
     );
-
     expect(loginresponse.status()).toBe(200);
     const loginbody = await loginresponse.json();
     console.log(loginbody);
 
     const accessToken = loginbody.accessToken
     console.log("Access token ", accessToken);
-    
+
 })

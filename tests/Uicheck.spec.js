@@ -33,6 +33,5 @@ test.only("mouse hower input options", async ({ page }) => {
 
     // 4. Click the desired option from the dropdown menu
     await mobilesLink.click();
-
 });
 
