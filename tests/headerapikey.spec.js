@@ -19,5 +19,4 @@ test.only('Retrive api key from catapi endpoints', async ({ request }) => {
   expect(responsebody.length).toBeGreaterThan(0);
   expect(responsebody[0]).toHaveProperty('id');
 
-
 });

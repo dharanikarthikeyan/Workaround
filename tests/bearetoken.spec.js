@@ -19,4 +19,5 @@ test('Beare token authendication', async ({ request }) => {
 
     const accessToken = loginbody.accessToken
     console.log("Access token ", accessToken);
+    
 })
